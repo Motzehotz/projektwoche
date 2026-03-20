@@ -29,15 +29,30 @@ footer a {
     width: 300px;
 }
 
+#nav {
+    display: flex;
+    justify-content: space-evenly;  /* Perfekter Abstand überall */
+    gap: 20px;                      /* Extra Abstand zwischen Links */
+    font-size: 25px;
+    border: 1px solid;
+    height: 2vw;
+}
+
 #nav a {
+    flex: 1;                        /* Links dehnen sich gleichmäßig */
+    text-align: center;
     color:black;
     text-decoration: none;
 }
 
-#nav {
-    font-size: 25px;
-    border: 1px solid;
+#nav a:hover {
+    flex: 1;                        /* Links dehnen sich gleichmäßig */
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    font-size: 27px;
 }
+
 
 .landingPage {
     margin-top: -6vw;
@@ -93,7 +108,7 @@ footer a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 6vw;
 }
 
 .produkt-karte {
@@ -172,4 +187,210 @@ footer a {
   margin-top: 2vw;
   margin-bottom: 5vw;
   font-size: 30px;
+}
+
+.kontakt {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    font-size: 30px;
+}
+
+.kontakt input {
+    font-size: 30px;
+}
+
+.kontakt textarea {
+    font-size: 30px;
+}
+
+.impressum {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f8fbff;            /* sehr helles Blau */
+  border-radius: 12px;
+  border: 1px solid #d0e3ff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.impressum h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0056b3;                 /* SchönGlas-Blau */
+  text-align: center;
+}
+
+.impressum-block {
+  margin-bottom: 18px;
+}
+
+.impressum-block h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #0056b3;
+}
+
+.impressum-block p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.impressum a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.impressum a:hover {
+  text-decoration: underline;
+}
+
+.form {
+    margin-top: 15vw;
+    margin-bottom: 18vw
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.form-row label {
+    width: 80px; /* Feste Breite für Labels */
+    margin-right: 10px;
+}
+
+.unternehmen {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f8fbff;            /* helles Optiker-Blau */
+  border-radius: 12px;
+  border: 1px solid #d0e3ff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.unternehmen h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0056b3;
+  text-align: center;
+}
+
+.unternehmen-highlight {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.unternehmen-highlight h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.unternehmen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.unternehmen-block {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e1e8ff;
+}
+
+.unternehmen-block h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #0056b3;
+}
+
+.unternehmen-block ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.unternehmen-block li {
+  padding: 4px 0;
+  position: relative;
+}
+
+.unternehmen-block li:before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: -20px;
+}
+
+.unternehmen-slogan {
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  color: #0056b3;
+  font-weight: 300;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-top: 3px solid #007bff;
+}
+
+.unternehmen blockquote {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.links1 {
+    margin-top: 5vw;
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+}
+
+.links1 img {
+    margin: auto;
+    width: 20vw;
+}
+
+.links2 {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.links2 img {
+    margin: auto;
+    width: 20vw;
+}
+
+.quellen_title {
+    margin-top: 5vw;
+}
+
+.quellen_title h1 {
+    font-size: 30px;
+}
+
+.quellen_title h3 {
+    font-size: 25px;
+}
+
+.intranet {
+    text-align: center;
 }
